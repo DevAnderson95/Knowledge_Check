@@ -4,21 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knowledge Check Assignment</title>
+    <link rel="stylesheet" href="styles..css">
 </head>
+
+<style>
+    body{
+        color: gray;
+    }
+    nav{
+        font-size: 30px;
+        
+    }
+    table{
+        font-size: 25px
+    }
+    legend{
+        font-size: 30px;
+    }
+    form{
+        font-size: 15px;
+    }
+    th{
+        font-size: 20px;
+    }
+</style>
+
 <body>
     <!-- Header -->
     <fieldset>
 
         <header>
-
-            <h1>Fresh Fruits Delivery Depot</h1>
+<!-- Inline CSS -->
+            <h1 style="color: red; font-size: 50px">Fresh Fruits Delivery Depot</h1>
 <!-- Navigation Bar -->
             <nav>
 
                 <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
+                    <li><a href="home" style="color: green;">Home</a></li>
+                    <li><a href="about" style="color: blueviolet;">About</a></li>
+                    <li><a href="contact" style="color:deeppink;">Contact</a></li>
                 </ul>
 
             </nav>
@@ -36,19 +60,12 @@
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" required
             placeholder="Enter your name">
-        </form>
-
-
-        <form action="/submit" method="post">
+        
             <label for="email">Email:</label>
-            <input type="email" id="user-email" name="user-email"
+            <input type="email" id="email" name="email"
             placeholder="Enter your email">
-        </form>
-
         
-    
-        <form action="/submit" method="post">
-        
+<!-- User Feedback -->
             <label for="source">How did you hear about us?:</label>
             <input type="radio" name="source" id="google" value="google">
             <label for="google" name="source" id="google">Google</label>
@@ -56,10 +73,11 @@
             <label for="facebook" name="source" id="facebook">Facebook</label>
             <input type="radio" name="source" id="twitter">
             <label for="twitter">Twitter</label>
-        </form>
+            <br><br>
+        
 
 
-        <form action="/submit" method="post">
+        <!-- Requests from customer  -->
             <label for="message">Request:</label>
             <textarea name="message" id="message" rows="4" cols="30" 
             placeholder="Enter your request"></textarea>
